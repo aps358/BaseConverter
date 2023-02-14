@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ameysawant.baseconverter.MainActivity"
+    android:background="@color/icons">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:isScrollContainer="true"
+        android:id="@+id/layout1"
+        android:keepScreenOn="true"
+        android:clickable="true">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:id="@+id/space"
+            android:visibility="visible"
+            android:clickable="true" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/decimal"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_gravity="left|center_vertical"
+                android:visibility="visible"
+                android:clickable="true"
+                android:textColor="@color/primary_text" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/clear"
+                android:id="@+id/clrbutton"
+                android:onClick="clearText"
+                android:layout_gravity="right|center_vertical"
+                android:visibility="visible"
+                android:background="@drawable/ripple"
+                android:clickable="true"
+                android:textColor="@color/primary_text"
+                android:layout_marginRight="10dp" />
+
+        </FrameLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:id="@+id/space2"
+            android:visibility="visible"
+            android:clickable="true" />
+
+        <EditText
+            android:id="@+id/decimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:singleLine="true"
+            android:longClickable="true"
+            android:visibility="visible"
+            android:textColor="@color/secondary_text" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:visibility="visible"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/binary"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:visibility="visible"
+            android:clickable="true"
+            android:textColor="@color/primary_text" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:id="@+id/space3"
+            android:visibility="visible"
+            android:clickable="true" />
+
+        <EditText
+            android:id="@+id/binary"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:ems="10"
+            android:inputType="text|textMultiLine"
+            android:longClickable="true"
+            android:visibility="visible"
+            android:textColor="@color/secondary_text" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:visibility="visible"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hexadecimal"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:visibility="visible"
+            android:clickable="true"
+            android:textColor="@color/primary_text" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:id="@+id/space4"
+            android:visibility="visible"
+            android:clickable="true" />
+
+        <EditText
+            android:id="@+id/hexadecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textCapCharacters|textNoSuggestions"
+            android:singleLine="true"
+            android:longClickable="true"
+            android:visibility="visible"
+            android:textColor="@color/secondary_text" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:visibility="visible"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/octal"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:visibility="visible"
+            android:clickable="true"
+            android:textColor="@color/primary_text" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:id="@+id/space5"
+            android:visibility="visible"
+            android:clickable="true" />
+
+        <EditText
+            android:id="@+id/octal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:singleLine="true"
+            android:inputType="text"
+            android:longClickable="true"
+            android:visibility="visible"
+            android:textColor="@color/secondary_text" />
+
+    </LinearLayout>
+
+</ScrollView>
+

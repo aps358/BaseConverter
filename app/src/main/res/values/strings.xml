@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Base Converter</string>
+    <string name="decimal">Decimal</string>
+    <string name="binary">Binary</string>
+    <string name="hexadecimal">Hexadecimal</string>
+    <string name="octal">Octal</string>
+    <string name="calculate">Calculate</string>
+    <string name="reset">Reset</string>
+    <string name="clear">CLEAR</string>
+
+</resources>
